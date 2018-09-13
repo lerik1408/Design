@@ -1,5 +1,5 @@
 body{
-    font-family: sans-serif;
+    font-family: 'Raleway Light','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin:0;
 }
 .clearfix::after {
@@ -147,32 +147,36 @@ background-color:#1a444a;
     margin-left: 25vw;
 }
 .main-screen .main-fond h1{
+    font-family:"PlayfairDisplay Bold";
     margin:0;
     font-size: 61px;
+    line-height:60px;
     color:#fff;
 }
 .main-screen .main-fond p{
+    font-family: 'Muller Light';
     margin:0;
     padding-top:35px;
     font-size: 14px;
     color:#fff;
     line-height: 20px;
 }
-.button-main:hover{
+.main-screen .button-main:hover{
     background-color: #f7a15a;
 }
-.button-main{
+.main-screen .button-main{
     position: absolute;
     margin-top:40px;
     top:460px;
-    left: 475px;
+    left: 25vw;
     width: 280px;
     height: 60px;
     border:1px solid #fff;
     background-color:transparent;   
 }
 
-.button-main a{
+.main-screen .button-main a{
+    font-family: 'Raleway ExtraBold';
     display: block;
     color:#fff;
     text-decoration: none;
@@ -216,4 +220,103 @@ background-color:#1a444a;
 }
 .main-screen .social img:last-child{
     padding-right:0px;
+}
+@media screen and (max-width: 1169px){
+    .main-screen .main-fond .main-content {
+        width: 300px;
+    }
+    .main-screen .main-fond h1{
+        font-size: 35px;
+        word-wrap:break-word;
+        line-height: 40px;
+    }
+    .main-screen .main-fond p{
+        font-size: 15px;
+        line-height: 20px;
+    }
+    .hamburger{
+        padding-right: 22%;
+    }
+
+}
+
+@media screen and (max-width: 1500px) {
+    .main-screen .main-fond .main-content   {
+        margin-left: 25%;
+    }
+.main-screen .button-main   {
+    left:12.5%
+    }
+
+}
+
+
+@media screen and (min-width: 1170px) {
+        .container{
+        background:
+        url(../img/fig.png) no-repeat 0 0,
+        url(../img/fig.png) no-repeat 24.358% 0,
+        url(../img/fig.png) no-repeat 50% 0,
+        url(../img/fig.png) no-repeat 74.700% 0,
+        url(../img/fig.png) no-repeat 100% 0;
+    }
+
+}
+@media screen and (max-width: 768px){
+    .main-screen .main-fond{
+        width: 100vw;
+        height: 1110px;
+    }
+    .main-screen .main-screen-header .logo{
+        width: 85px;
+        height: 50px;
+        float: left;
+        margin-top:60px;
+        margin-left:5%;
+    }
+    /* Бургер */
+    .hamburger{
+        padding: 0;
+        width: 65px;
+        height: 45px;
+        
+        margin-right: 5%;
+        margin-top:60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        float: right;
+    }
+    .menu-btn {
+        display: block;
+        width: 65px;
+        height: 45px;
+        position: relative;
+        text-decoration: none;
+      }
+    .menu-btn span,
+    .menu-btn span::before,
+    .menu-btn span::after{
+        top:50%; margin-top: -2px;
+        left:50%;margin-left: -32px;
+        width: 65px;
+        height: 5px;
+
+    }    
+    .menu-btn span::before{
+        transform: translateY(-15px);
+    }
+    .menu-btn span::after{
+        transform: translateY(15px);
+    }
+    /* Бургер */
+    .main-screen .main-screen-header{
+       width:100vw; 
+    }
+    .main-screen{
+        width: 768px;
+    }
+    .main-screen .main-screen-header .phone{
+        display:none;
+    }
 }

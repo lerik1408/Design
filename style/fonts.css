@@ -1,0 +1,48 @@
+@font-face{
+    font-family: "Muller Ultra Light";
+    src:url("../fonts/Muller-Ultra-Light.otf");
+    font-style:normal;
+    font-weight: normal; 
+}
+@font-face{
+    font-family: "Muller Light";
+    src:url("../fonts/MullerLight.otf");
+    font-style:normal;
+    font-weight: normal; 
+}
+@font-face{
+    font-family: "Raleway Light";
+    src:url("../fonts/Raleway-Light.ttf");
+    font-style:normal;
+    font-weight: normal; 
+}
+@font-face{
+    font-family: "Releway Medium";
+    src:url("../fonts/Releway-Medium.ttf");
+    font-style:normal;
+    font-weight: normal; 
+}
+@font-face{
+    font-family: "Raleway SemiBold";
+    src:url("../fonts/Raleway-SemiBold.ttf");
+    font-style:normal;
+    font-weight: normal; 
+}
+@font-face{
+    font-family: "Raleway Regular";
+    src:url("../fonts/Raleway-Regular.ttf");
+    font-style:normal;
+    font-weight: normal; 
+}
+@font-face{
+    font-family: "PlayfairDisplay Bold";
+    src:url("../fonts/PlayfairDisplay-Bold.ttf");
+    font-style:normal;
+    font-weight: normal; 
+}
+@font-face{
+    font-family: "Raleway ExtraBold";
+    src:url("../fonts/Raleway-ExtraBold.ttf");
+    font-style:normal;
+    font-weight: normal; 
+}
