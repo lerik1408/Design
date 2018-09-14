@@ -1,19 +1,26 @@
 window.addEventListener('DOMContentLoaded', function() {
-    var img = document.getElementById("logo");
+    var imglog = document.getElementById("imglogo");
+    var imgimg = document.getElementById("imgimg")
     function logo768(){
-        img.src="../img/mainScreen/logo768.png";
+        imglog.src="img/mainScreen/logo768.png";
     }
     function logo(){
-        img.src="../img/mainScreen/logo.png"; 
+        imglog.src="img/mainScreen/logo.png"; 
     }
     function checkSize(){
         if(document.documentElement.clientWidth < 1153){
         logo768();
-        }   else{
+        }else{
             logo() 
-            }
+        }
+        // if(document.documentElement.clientWidth < 768){
+        //     imgimg.src="../img/mainScreen/image768.png";
+        // }else{
+        //     imgimg.src="../img/mainScreen/image.png";
+        // }
     }
         $(window).resize(function() {
+            console.log("ss")
         checkSize();
     });
 });

@@ -49,16 +49,7 @@ body{
 }
   /* Бургер */
   /* Хедер */
-@media screen and (min-width: 1360px) {
-    .container{
-    background:
-    url(../img/fig.png) no-repeat 0 0,
-    url(../img/fig.png) no-repeat 24.358% 0,
-    url(../img/fig.png) no-repeat 50% 0,
-    url(../img/fig.png) no-repeat 74.700% 0,
-    url(../img/fig.png) no-repeat 100% 0;
-}
-}
+
 
 .container{
     width: 1170px;
@@ -136,7 +127,7 @@ background-color:#1a444a;
     left: 0;
     opacity: 0.97;
     height: 769px;
-    width: 50vw;
+    width: 50%;
     background-color:#182c3d;
     z-index: -1;
 }
@@ -209,6 +200,9 @@ background-color:#1a444a;
     right: -10px;
     border-width: 4px 0px 4px 15px;
 }
+.main-screen .arrow-down{
+    display:none;
+}
 .main-screen .social{
 
     width: 110px;
@@ -221,7 +215,8 @@ background-color:#1a444a;
 .main-screen .social img:last-child{
     padding-right:0px;
 }
-@media screen and (max-width: 1169px){
+/* Медиа запросы */
+@media (min-width: 769px) and (max-width: 1169px){
     .main-screen .main-fond .main-content {
         width: 300px;
     }
@@ -240,7 +235,7 @@ background-color:#1a444a;
 
 }
 
-@media screen and (max-width: 1500px) {
+@media (min-width: 769px) and (max-width: 1500px) {
     .main-screen .main-fond .main-content   {
         margin-left: 25%;
     }
@@ -262,11 +257,26 @@ background-color:#1a444a;
     }
 
 }
-@media screen and (max-width: 768px){
+
+@media (min-width: 360px) and (max-width: 768px){
+    /* Основа */
     .main-screen .main-fond{
         width: 100vw;
         height: 1110px;
+        z-index: 2;
+        opacity: 0.85;
     }
+    .container{
+        width: 100vw;
+    }
+    .main-screen{
+        width: 100vw;
+        height: 1110px;
+        background-image:url("../img/mainScreen/image768.png");
+        background-repeat: no-repeat;
+    }
+    /* Основа */
+    /* Мейн хедер */
     .main-screen .main-screen-header .logo{
         width: 85px;
         height: 50px;
@@ -279,21 +289,21 @@ background-color:#1a444a;
         padding: 0;
         width: 65px;
         height: 45px;
-        
         margin-right: 5%;
         margin-top:60px;
         display: flex;
         justify-content: center;
         align-items: center;
         float: right;
-    }
+    }   
+
     .menu-btn {
         display: block;
         width: 65px;
         height: 45px;
         position: relative;
         text-decoration: none;
-      }
+    }
     .menu-btn span,
     .menu-btn span::before,
     .menu-btn span::after{
@@ -311,12 +321,180 @@ background-color:#1a444a;
     }
     /* Бургер */
     .main-screen .main-screen-header{
-       width:100vw; 
+        position: relative;
+       width:100%;
+       z-index: 3;
     }
-    .main-screen{
-        width: 768px;
-    }
+   
     .main-screen .main-screen-header .phone{
         display:none;
     }
+    /* Мейн хедер */
+    .main-screen .slider{
+        display:none;
+    }
+
+    .main-screen .main-fond .main-content{
+        width: 78.125%;
+        height: 330px;
+        margin: 0;
+        margin-left:auto;
+        margin-right: auto;
+        margin-top: 300px;
+    }
+
+    .main-fond .main-content h1{
+        font-size:100px;
+        line-height: 100px;
+    }
+    .main-fond .main-content h1 span{
+        padding-left:100px;
+    }
+    .main-fond .main-content p{
+        display:block;
+        width: 550px;
+        font-size:26px;
+    }
+    .main-fond .main-content p span{
+        padding-left:45px
+    }
+    .main-screen .social{
+        display:none;
+    }
+    .main-screen .button-main{
+        width: 440px;
+        height: 115px;
+        z-index:3;
+        top:110%;
+        left: 20%;
+        margin: 0;
+        
+    }
+    .main-screen .button-main a{
+        font-family: 'Raleway ExtraBold';
+        font-size:30px;
+        margin: 0;
+        position: absolute;               /* 2 */
+        top: 50%;                  /* 3 */
+        left:15%;
+    }
+    .main-screen .button-main a .arrow{
+        display:none;
+    }
+    .button-main .arrow{
+        display:none;
+    }
+    .main-screen .arrow-down{
+        display:block;
+        position: relative;
+        left:50%;
+        top:800px;
+        width: 5px;
+        height: 80px;
+        background-color: #fff;
+        z-index:3;
+    }
+    .main-screen .arrow-down::after{
+        position: absolute;
+        content:'';
+        display: block;
+        width: 0;
+        height: 0;
+        border: 10px solid transparent;
+        border-bottom: 0;
+        border-top-color:#fff;
+        top: 80px;
+        right: -8px;
+      
+    }
+    /* Краш точки */
+    @media (min-width: 320px) and (max-width: 660px){
+        .main-screen .main-fond .main-content{
+            width: 300px;
+            height: 330px;
+            margin-top: 250px;
+        }
+        .main-fond .main-content h1{
+            font-size:50px;
+            line-height: 50px
+        }
+        .main-fond .main-content h1 span{
+            padding-left:50px;
+        }
+        .main-fond .main-content p{
+            display:block;
+            width: 300px;
+            font-size:19px;
+            word-wrap:normal;
+            padding-left: 10px 
+        }
+        .main-fond .main-content p span{
+            padding: 0;
+        }
+        .main-screen .button-main{
+            margin-left:100px;
+            width: 225px;
+            height: 55px;
+            z-index:3;
+            top:90%;
+            left: 30%;
+            margin: 0;
+            
+        }
+        .main-screen .button-main a{
+            font-family: 'Raleway ExtraBold';
+            font-size:14px;
+            margin: 0;
+            position: absolute;               
+            top: 50%;                 
+            left:20%;
+        }
+        .main-screen .arrow-down{
+            height: 60px;
+            left:46%;
+            top:50%;
+        }
+        .main-screen .arrow-down::after{
+            top: 60px;
+        }
+        @media (min-width: 320px) and (max-width: 540px){
+            .main-screen .main-screen-header .hamburger{
+                width: 35px;
+                height: 25px;
+            }
+            .menu-btn {
+                display: block;
+                width: 26px;
+                height: 20px;
+                position: relative;
+                text-decoration: none;
+              }
+            .menu-btn span,
+            .menu-btn span::before,
+            .menu-btn span::after{
+                position: absolute;
+                top:50%; margin-top: -2px;
+                left:50%;margin-left: -15px;
+                width: 30px;
+                height: 3px;
+                background-color:#fff;
+            }
+            .main-screen .button-main{
+                left: 25%;
+            }
+            .main-screen .main-screen-header .logo{
+                width: 35px;
+                height: 25px;
+            }
+            @media (min-width: 320px) and (max-width: 400px){
+                .main-screen .button-main{
+                    left: 12%;
+                }
+                
+            }
+            
+        }
+
+    }
 }
+/* Медиа запросы */
