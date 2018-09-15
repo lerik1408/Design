@@ -23,4 +23,11 @@ window.addEventListener('DOMContentLoaded', function() {
             console.log("ss")
         checkSize();
     });
+    if(document.documentElement.clientWidth < 1153){
+        console.log("768")
+        logo768();
+        }else{
+            console.log("1000")
+            logo() 
+        }
 });
