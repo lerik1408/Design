@@ -414,47 +414,6 @@ background-color:#1a444a;
     }
     /* Краш точки */
     
-
-
-
-        /* @media (min-width: 320px) and (max-width: 540px){
-            .main-screen .main-screen-header .hamburger{
-                width: 35px;
-                height: 25px;
-            }
-            .menu-btn {
-                display: block;
-                width: 26px;
-                height: 20px;
-                position: relative;
-                text-decoration: none;
-              }
-            .menu-btn span,
-            .menu-btn span::before,
-            .menu-btn span::after{
-                position: absolute;
-                top:50%; margin-top: -2px;
-                left:50%;margin-left: -15px;
-                width: 30px;
-                height: 3px;
-                background-color:#fff;
-            }
-            .main-screen .button-main{
-                left: 25%;
-            }
-            .main-screen .main-screen-header .logo{
-                width: 35px;
-                height: 25px;
-            }
-            @media (min-width: 320px) and (max-width: 400px){
-                .main-screen .button-main{
-                    left: 12%;
-                }
-                
-            }
-            
-        } */
-
     
 }
 /* Медиа запросы */
@@ -602,4 +561,155 @@ background-color:#1a444a;
     .main-screen .social {
         display: none;
     }
+}
+@media (min-width: 321px) and (max-width: 480px){
+    .main-screen {
+        width: 100vw;
+        height: 1100px;
+        position: relative;
+        background-image: url(../img/mainScreen/image768.png);
+        background-repeat: no-repeat;
+    }
+    .main-screen .main-screen-header {
+        position: relative;
+        width: 100%;
+        z-index: 3;
+        height: 85px;
+    }
+    .hamburger{
+        padding: 0;
+        width: 65px;
+        height: 45px;
+        margin-right: 5%;
+        margin-top:60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        float: right;
+    }   
+
+    .menu-btn {
+        display: block;
+        width: 65px;
+        height: 45px;
+        position: relative;
+        text-decoration: none;
+    }
+    .menu-btn span,
+    .menu-btn span::before,
+    .menu-btn span::after{
+        top:50%; margin-top: -2px;
+        left:50%;margin-left: -32px;
+        width: 65px;
+        height: 5px;
+
+    }    
+    .menu-btn span::before{
+        transform: translateY(-15px);
+    }
+    .menu-btn span::after{
+        transform: translateY(15px);
+    }
+
+    .main-screen .main-screen-header .logo {
+        width: 85px;
+        height: 50px;
+        float: left;
+        margin-top: 60px;
+        margin-left: 5%;
+    }
+    .main-screen .main-screen-header .phone {
+        display: none;
+    }
+    .main-screen .slider {
+        display: none;
+    }
+    .main-screen .main-fond {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: #182c3d;
+        /* ss */
+        width: 100vw;
+        height: 1110px;
+        z-index: 2;
+        opacity: 0.85;
+    }
+    .main-screen .main-fond .main-content {
+        width: 88.49%;
+        height: 330px;
+        margin-top: 250px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .main-screen .main-fond h1 {
+        margin: 0;
+        font-size: 40px;
+        line-height: 40px;
+        color: #fff;
+    }
+    .main-fond .main-content p{
+        display:block;
+        width: 88.49%;
+        font-size:20px;
+        word-wrap:normal;
+        padding-left: 10px 
+    }
+    .main-fond .main-content p span{
+        padding: 0;
+    }
+    .main-screen .button-main {
+        position: absolute;
+        margin-left: 100px;
+        width: 225px;
+        height: 55px;
+        z-index: 3;
+        top: 50%;
+        left: 18%;
+        margin: 0;
+        border: 1px solid #fff;
+        background-color: transparent;
+    }
+    .main-screen .button-main a {
+        font-family: 'Raleway ExtraBold';
+        font-size: 14px;
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 20%;
+        display: block;
+        color: #fff;
+        text-decoration: none;
+    }
+    .button-main .arrow {
+        display: none;
+    }
+    .main-screen .arrow-down {
+        display: block;
+        position: absolute;
+        height: 60px;
+        left: 46%;
+        top: 60%;
+        width: 5px;
+        background-color: #fff;
+        z-index: 3;
+        margin: 0;
+    }
+    .main-screen .arrow-down::after {
+        position: absolute;
+        content: '';
+        display: block;
+        width: 0;
+        height: 0;
+        border: 10px solid transparent;
+        border-bottom: 0;
+        border-top-color: #fff;
+        top: 60px;
+        right: -8px;
+    }
+    .main-screen .social {
+        display: none;
+    }
+    
 }
