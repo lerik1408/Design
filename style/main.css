@@ -260,6 +260,7 @@ background-color:#1a444a;
 
 @media (min-width: 360px) and (max-width: 768px){
     /* Основа */
+
     .main-screen .main-fond{
         width: 100vw;
         height: 1110px;
@@ -272,11 +273,17 @@ background-color:#1a444a;
     .main-screen{
         width: 100vw;
         height: 1110px;
+        position: relative;
         background-image:url("../img/mainScreen/image768.png");
         background-repeat: no-repeat;
     }
     /* Основа */
     /* Мейн хедер */
+    .main-screen .main-screen-header{
+        position: relative;
+        width:100%;
+        z-index: 3;
+     }
     .main-screen .main-screen-header .logo{
         width: 85px;
         height: 50px;
@@ -320,20 +327,16 @@ background-color:#1a444a;
         transform: translateY(15px);
     }
     /* Бургер */
-    .main-screen .main-screen-header{
-        position: relative;
-       width:100%;
-       z-index: 3;
-    }
    
     .main-screen .main-screen-header .phone{
         display:none;
     }
     /* Мейн хедер */
+    
     .main-screen .slider{
         display:none;
     }
-
+/* фонд */
     .main-screen .main-fond .main-content{
         width: 78.125%;
         height: 330px;
@@ -354,6 +357,7 @@ background-color:#1a444a;
         display:block;
         width: 550px;
         font-size:26px;
+        padding-top:75px;
     }
     .main-fond .main-content p span{
         padding-left:45px
@@ -365,7 +369,7 @@ background-color:#1a444a;
         width: 440px;
         height: 115px;
         z-index:3;
-        top:110%;
+        top:61.261%;
         left: 20%;
         margin: 0;
         
@@ -386,13 +390,14 @@ background-color:#1a444a;
     }
     .main-screen .arrow-down{
         display:block;
-        position: relative;
+        position: absolute;
         left:50%;
-        top:800px;
+        top:81.081%;
         width: 5px;
         height: 80px;
         background-color: #fff;
         z-index:3;
+        margin: 0;
     }
     .main-screen .arrow-down::after{
         position: absolute;
@@ -408,23 +413,24 @@ background-color:#1a444a;
       
     }
     /* Краш точки */
-    @media (min-width: 320px) and (max-width: 660px){
+    @media (min-width: 480px) and (max-width: 660px){
         .main-screen .main-fond .main-content{
-            width: 300px;
+            width: 88.49%;
             height: 330px;
             margin-top: 250px;
+            text-align: center;
         }
         .main-fond .main-content h1{
-            font-size:50px;
+            font-size:70px;
             line-height: 50px
         }
         .main-fond .main-content h1 span{
-            padding-left:50px;
+            padding:0px;
         }
         .main-fond .main-content p{
             display:block;
-            width: 300px;
-            font-size:19px;
+            width: 88.49%;
+            font-size:20px;
             word-wrap:normal;
             padding-left: 10px 
         }
@@ -437,7 +443,7 @@ background-color:#1a444a;
             height: 55px;
             z-index:3;
             top:90%;
-            left: 30%;
+            left: 25%;
             margin: 0;
             
         }
@@ -457,7 +463,8 @@ background-color:#1a444a;
         .main-screen .arrow-down::after{
             top: 60px;
         }
-        @media (min-width: 320px) and (max-width: 540px){
+    }
+        /* @media (min-width: 320px) and (max-width: 540px){
             .main-screen .main-screen-header .hamburger{
                 width: 35px;
                 height: 25px;
@@ -493,8 +500,10 @@ background-color:#1a444a;
                 
             }
             
-        }
+        } */
 
-    }
+    
 }
 /* Медиа запросы */
+
+/* 
