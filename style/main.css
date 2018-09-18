@@ -40,12 +40,22 @@ body{
 .menu-btn span::after{
     content:'';
     display:block;
+    transition:0.5s;
 }
 .menu-btn span::before{
     transform: translateY(-5px);
 }
 .menu-btn span::after{
     transform: translateY(5px);
+}
+.menu-btn_active span{
+    height: 0;
+}
+.menu-btn_active span::before{
+    transform: rotate(45deg);
+}
+.menu-btn_active span::after{
+    transform:rotate(-45deg);
 }
   /* Бургер */
   /* Хедер */
@@ -57,6 +67,8 @@ body{
     height: 770px;
 }
 .main-screen .main-screen-header{
+    position:relative;
+    z-index: 10;
     height: 85px; 
 }
 .main-screen .main-screen-header .logo{
@@ -80,6 +92,34 @@ body{
     left:-15px;  
 }
 /* Хедер */
+/* Меню */
+.main-screen .menu{
+    display:none;
+    position: absolute;
+    height: 595px;
+    width: 1170px;
+    background-color:#112537;
+    text-align: center;
+    z-index:5;
+}
+.menu .menu-content{
+    margin:auto;
+    width: 205px;
+    height: 330px;
+    margin-top:80px;
+}
+.menu .menu-content h3{
+    font-size: 20px;
+    padding:15px;
+}
+.menu .menu-content h3 a{
+    text-decoration: none;
+    color:#a2a1a1;
+}
+.menu .menu-content h3 a:hover{
+    color:#f8a25a;
+}
+/* Меню */
 /* Слайдер */
 .main-screen .slider{
     position: relative;
@@ -281,12 +321,30 @@ background-color:#1a444a;
         background-image:url("../img/mainScreen/image768.png");
         background-repeat: no-repeat;
     }
+    /* Меню */
+    .main-screen .menu{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 1110px;
+    }
+    .menu .menu-content{
+        margin-top: 250px;
+        width: 360px;
+        height: 550px;
+    }
+    .menu .menu-content h3{
+        font-size: 35px;
+        padding:25px;
+    }
+    /* Меню */
     /* Основа */
     /* Мейн хедер */
     .main-screen .main-screen-header{
         position: relative;
         width:100%;
-        z-index: 3;
+        z-index: 6;
      }
     .main-screen .main-screen-header .logo{
         width: 85px;
@@ -322,6 +380,15 @@ background-color:#1a444a;
     .menu-btn span::after{
         transform: translateY(15px);
     }
+    .menu-btn_active span{
+        height: 0;
+    }
+    .menu-btn_active span::before{
+        transform: rotate(45deg);
+    }
+    .menu-btn_active span::after{
+        transform:rotate(-45deg);
+    }
     /* Бургер */
     .main-screen .main-screen-header .phone{
         display:none;
@@ -355,7 +422,11 @@ background-color:#1a444a;
         padding-left:45px
     }
     .main-screen .social{
-        display:none;
+        display:block;
+        position: absolute;
+        left: 44%;
+        bottom: 3%;
+        z-index: 10;
     }
     .main-screen .button-main{
         width: 440px;
@@ -387,8 +458,25 @@ background-color:#1a444a;
     .main-screen .main-screen-header {
         position: relative;
         width: 100%;
-        z-index: 3;
+        z-index: 6;
         height: 85px;
+    }
+    .main-screen .menu{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 1110px;
+    }
+    .menu .menu-content{
+        margin-top: 250px;
+        width: 360px;
+        height: 550px;
+        text-align:center;
+    }
+    .menu .menu-content h3{
+        font-size: 35px;
+        padding:25px;
     }
     .hamburger{
         padding: 0;
@@ -415,6 +503,15 @@ background-color:#1a444a;
     }
     .menu-btn span::after{
         transform: translateY(15px);
+    }
+    .menu-btn_active span{
+        height: 0;
+    }
+    .menu-btn_active span::before{
+        transform: rotate(45deg);
+    }
+    .menu-btn_active span::after{
+        transform:rotate(-45deg);
     }
     .main-screen .main-screen-header .logo {
         width: 85px;
@@ -476,7 +573,11 @@ background-color:#1a444a;
         top:70.081%;
     }
     .main-screen .social {
-        display: none;
+        display:block;
+        position: absolute;
+        left: 40%;
+        bottom: 3%;
+        z-index: 10;
     }
 }
 @media (min-width: 321px) and (max-width: 480px){
@@ -490,7 +591,23 @@ background-color:#1a444a;
     .main-screen .main-screen-header {
         position: relative;
         width: 100%;
-        z-index: 3;
+        z-index: 6;
+    }
+    .main-screen .menu{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 1110px;
+    }
+    .menu .menu-content{
+        margin-top: 250px;
+        width: 200px;
+        height: 550px;
+    }
+    .menu .menu-content h3{
+        font-size: 20px;
+        padding:25px;
     }
     .hamburger{
         padding: 0;
@@ -518,7 +635,15 @@ background-color:#1a444a;
     .menu-btn span::after{
         transform: translateY(15px);
     }
-
+    .menu-btn_active span{
+        height: 0;
+    }
+    .menu-btn_active span::before{
+        transform: rotate(45deg);
+    }
+    .menu-btn_active span::after{
+        transform:rotate(-45deg);
+    }
     .main-screen .main-screen-header .logo{
         width: 85px;
         height: 50px;
@@ -592,7 +717,11 @@ background-color:#1a444a;
         right: -8px;
     }
     .main-screen .social {
-        display: none;
+        display:block;
+        position: absolute;
+        left: 40%;
+        bottom: 3%;
+        z-index: 10;
     }
     
 }
@@ -607,7 +736,23 @@ background-color:#1a444a;
     .main-screen .main-screen-header {
         position: relative;
         width: 100%;
-        z-index: 3;
+        z-index: 7;
+    }
+    .main-screen .menu{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 610px;
+    }
+    .menu .menu-content{
+        margin-top: 100px;
+        width: 300px;
+        height: 335px;
+    }
+    .menu .menu-content h3{
+        font-size: 20px;
+        padding:15px;
     }
     .hamburger{
         padding: 0;
@@ -634,6 +779,15 @@ background-color:#1a444a;
     }
     .menu-btn span::after{
         transform: translateY(10px);
+    }
+    .menu-btn_active span{
+        height: 0;
+    }
+    .menu-btn_active span::before{
+        transform: rotate(45deg);
+    }
+    .menu-btn_active span::after{
+        transform:rotate(-45deg);
     }
     .main-screen .main-screen-header .logo {
         width: 40px;
@@ -710,6 +864,10 @@ background-color:#1a444a;
         right: -8px;
     }
     .main-screen .social {
-        display: none;
+        display:block;
+        position: absolute;
+        left: 35%;
+        bottom: 3%;
+        z-index: 10;
     }
 }
