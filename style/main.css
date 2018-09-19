@@ -122,13 +122,14 @@ body{
 /* Меню */
 /* Слайдер */
 .main-screen .slider{
-    position: relative;
     height: 655px;
     z-index: -2;
 }
 .main-screen .slider .slider-item{
+    position: relative;
     height: 595px;
     width: 1170px;
+    z-index: -2;
 }
 .main-screen .slider .slider-item img{
     height: 595px;

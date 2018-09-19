@@ -30,4 +30,7 @@ window.addEventListener('DOMContentLoaded', function() {
             console.log("1000")
             logo() 
         }
+        for(let i=1;i<10;i++){
+            console.log(i)
+        }
 });
