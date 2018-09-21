@@ -13,11 +13,6 @@ window.addEventListener('DOMContentLoaded', function() {
         }else{
             logo() 
         }
-        // if(document.documentElement.clientWidth < 768){
-        //     imgimg.src="../img/mainScreen/image768.png";
-        // }else{
-        //     imgimg.src="../img/mainScreen/image.png";
-        // }
     }
         $(window).resize(function() {
             console.log("ss")
