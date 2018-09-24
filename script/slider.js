@@ -35,17 +35,10 @@ window.addEventListener('DOMContentLoaded', function() {
   };
   
   dotsWrap.addEventListener('click', function(event) {
-    for (let i = 0; i < dots.length+1; i++) {
-      if (event.target.classList.contains('dot') && event.target == dots[i-1]) {
-       
-        console.log('ok')
-        console.log(currentSlide(i));
-        console.log(dots[i-1])
+    for (let i = 0; i <= dots.length; i++) {
+      if (event.target.classList.contains('dot') && event.target == dots[i-1]){
         currentSlide(i);
       }
     }
   });
-  console.log('KEK')
-  console.log(dots);
-  console.log(dots[1-1])
 });

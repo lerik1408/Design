@@ -272,6 +272,9 @@ background-color:#1a444a;
 }
 /* МЕЙНСКРИН конец*/
 /* МЕЙНСКРИН Конец*/
+
+/* feature НАЧАЛО */
+/* feature НАЧАЛО */
 .feature{
     margin-top: 0;
     height: 720px;
@@ -317,6 +320,88 @@ background-color:#1a444a;
     padding: 0;
     color:#838383;
 }
+/* feature Конец */
+/* feature Конец */
+
+/* portfolio Начало */
+/* portfolio Начало */
+.portfolio{
+    height: 855px;
+    position:relative;
+}
+.portfolio h2{
+    font-family: "PlayfairDisplay Bold";
+    font-size: 45px;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 90px;
+}
+.portfolio-menu{
+    padding: 0;
+    float: left;
+    width: 170px;
+    
+}
+.portfolio-menu li{
+    font-size: 18px;
+    color:#7d7d7d;
+    list-style: none;
+    margin-bottom:100px;
+    padding: 0;
+    width: 220px;
+}
+.portfolio-menu li:hover{
+    color:#000000;
+    transform:translateX(10px);
+    font-weight:bold;
+}
+.portfolio-slider-item{
+    width: 880px;
+    height: 605px;
+    float: right;
+}
+.portfolio-slider-item img{
+    width: 880px;
+    height: 390px;
+}
+.portfolio-slider-item-content{
+    height: 160px;
+    width: 480px;
+}
+.portfolio-slider-item-content h3{
+    font-family:"PlayfairDisplay Bold";
+    font-size:30px;
+}
+.portfolio-slider-item-content p{
+    font-size:18px;
+}
+.portfolio-button{
+    position:relative;
+    right: -955px;
+    bottom: -580px;
+    width: 215px;
+    height: 55px;
+    background-color:transparent;
+    border:solid 1px #00203a;
+}
+.portfolio-button a{
+    font-family:"Raleway ExtraBold";
+    font-size:15px;
+    color:#00203a;
+    position:absolute;
+    top:35%;
+    left:45px;
+    text-decoration: none;
+}
+.portfolio-button:hover{
+    background-color: #f7a15a;
+}
+.portfolio span{
+    position:relative;
+    left:790px;
+    bottom:150px
+}
+
 /* Медиа запросы */
 @media (min-width: 769px) and (max-width: 1169px){
     .main-screen .main-fond .main-content {
