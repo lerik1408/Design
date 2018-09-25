@@ -339,10 +339,9 @@ background-color:#1a444a;
 .portfolio-menu{
     padding: 0;
     float: left;
-    width: 170px;
-    
+    width: 170px; 
 }
-.portfolio-menu li{
+.portfolio-menu-dot{
     font-size: 18px;
     color:#7d7d7d;
     list-style: none;
@@ -354,6 +353,10 @@ background-color:#1a444a;
     color:#000000;
     transform:translateX(10px);
     font-weight:bold;
+}
+.portfolio-menu .portfolio-menu-dot-active{
+    color: #f7a15a;
+    transform:translateX(15px);
 }
 .portfolio-slider-item{
     width: 880px;
