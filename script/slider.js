@@ -44,7 +44,7 @@ window.addEventListener('DOMContentLoaded', function() {
   }); 
   // Слайдер1
   // Слайдер дивов
-  let PortfolioIndex = 2,
+  let PortfolioIndex = 1,
   portfolio=document.getElementsByClassName("portfolio-slider-item"),
   PortfolioDotWrap=document.querySelector('.portfolio-menu'),
   PortfolioDot=document.getElementsByClassName('portfolio-menu-dot');
