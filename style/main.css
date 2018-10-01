@@ -404,7 +404,81 @@ background-color:#1a444a;
     left:790px;
     bottom:150px
 }
-
+/* Портфолио конец */
+/* Портфолио конец */
+/* Этапы НАЧАЛО */
+/* Этапы НАЧАЛО */
+.stages{
+    height: 590px;
+    padding-top:135px;
+}
+.stages h2{
+    font-family: "Raleway ExtraBold";
+    font-size:45px;
+    color:#00203a;
+    margin: 0;
+    padding: 0;
+    margin-bottom:50px;
+}
+.stages-block{
+    position:relative;
+    display:inline-block;
+    width: 23.931%;
+    height: 130px;
+    padding-left:75px;
+    margin-bottom: 40px;
+    margin-right: 2.564%;
+}
+.stages-block::before{
+    position:absolute;
+    top: 0;
+    left: 0;
+    content:"1";
+    display: flex;
+    width:70px;
+    height: 70px;
+    background:
+    radial-gradient(circle closest-side,#fde5d1 17px,#ffffff 18px, #ffffff 22px,#fde5d1 23px,#fde5d1 24px, #fff 25px,#fff 34px, #fde5d1 35px);
+    justify-content:center;
+    align-items: center;
+    border-radius: 50%;
+}
+.stages-block-2::before{
+    content:"2";
+}
+.stages-block-3::before{
+    content:"3";
+}
+.stages-block-4::before{
+    content:"4";
+}
+.stages-block-5::before{
+    content:"5";
+}
+.stages-block-6::before{
+    content:"6";
+}
+.stages-block h3::after{
+    content:"";
+    position:absolute;
+    bottom: -20px;
+    left: 0;
+    display:block;
+    width: 40px;
+    height: 1px;
+    background-color:#313131;
+}
+.stages-block h3{
+    position:relative;
+    font-family: "Raleway SemiBold";
+    font-size:22px;
+    color:#313131;
+    margin-bottom:40px;
+}
+.stages-block p{
+    font-size:16px;
+    color:#5e5e5e;
+}
 /* Медиа запросы */
 @media (min-width: 769px) and (max-width: 1169px){
     .main-screen .main-fond .main-content {
@@ -673,6 +747,32 @@ background-color:#1a444a;
     .portfolio .value{
         left: 85%;
     }
+    /* Портфолио конец */
+    /* Портфолио конец */
+    /* Этапы НАЧАЛО */
+    /* Этапы НАЧАЛО */
+    .stages{
+        height: 1040px;
+    }
+    .stages-block{
+    width: 35.55%;
+    padding-left:40px;
+    margin-bottom:100px;
+    }
+    .stages-block::before{
+    top: 20px;
+    left: 0;
+    width:40px;
+    height:40px;
+    background:
+    radial-gradient(circle closest-side,#fde5d1 10px,#ffffff 11px, #ffffff 19px,#fde5d1 20px,#fde5d1 24px, #fff 25px,#fff 34px, #fde5d1 35px);
+    }
+    .stages-block h3{
+        width: 100px;
+    }
+    .stage-block p{
+        width: 100%;
+    }
 }
 @media (min-width: 480px) and (max-width: 660px){
     .container{
@@ -898,6 +998,40 @@ background-color:#1a444a;
     font-size: 13px;
     left: 80%;
     }
+    /* Портфолио конец */
+    /* Портфолио конец */
+    /* Этапы НАЧАЛО */
+    /* Этапы НАЧАЛО */
+    .stages{
+    height: 840px;
+    padding-top:200px;
+    }
+    .stages h2{
+    font-size: 30px;
+    }
+    .stages-block{
+    width: 32.55%;
+    padding-left:40px;
+    margin-bottom:100px;
+    }
+    .stages-block::before{
+    top: 0px;
+    left: -5px;
+    width:40px;
+    height:40px;
+    background:
+    radial-gradient(circle closest-side,#fde5d1 10px,#ffffff 11px, #ffffff 19px,#fde5d1 20px,#fde5d1 24px, #fff 25px,#fff 34px, #fde5d1 35px);
+    }
+    .stages-block h3{
+        font-size: 14px;
+        word-wrap: normal;
+        width: 100%;
+    }
+    .stages-block p{
+        width: 100%;
+        height: 90px;
+        font-size: 13px;
+    }
 }
 @media (min-width: 321px) and (max-width: 480px){
     .container{
@@ -1113,6 +1247,36 @@ background-color:#1a444a;
         right: 0;
         bottom: -80px;
     }
+    /* Портфолио конец */
+    /* Портфолио конец */
+    /* Этапы НАЧАЛО */
+    /* Этапы НАЧАЛО */
+     .stages{
+    height: 1450px;
+    }
+    .stages h2{
+        font-size: 45px;
+        text-align: center;
+        margin:0;
+    }
+    .stages-block{
+    width: 100%;
+    padding:0px;
+    margin-top: 40px;
+    }
+    .stages-block::before{
+    display:none;
+    }
+    .stages-block h3{
+        font-size: 22px;
+        word-wrap: normal;
+        width: 100%;
+    }
+    .stages-block p{
+        width: 100%;
+        height: 90px;
+        font-size: 18px;
+    }
 }
 @media (min-width: 319px)and (max-width: 320px){
     .container{
@@ -1325,4 +1489,35 @@ background-color:#1a444a;
         right: 0;
         bottom: -80px;
     }
+    /* Портфолио конец */
+    /* Портфолио конец */
+    /* Этапы НАЧАЛО */
+    /* Этапы НАЧАЛО */
+     .stages{
+        height: 1450px;
+    }
+    .stages h2{
+        font-size: 45px;
+        text-align: center;
+        margin:0;
+    }
+    .stages-block{
+    width: 100%;
+    padding:0px;
+    margin-top: 40px;
+    }
+    .stages-block::before{
+    display:none;
+    }
+    .stages-block h3{
+        font-size: 22px;
+        word-wrap: normal;
+        width: 100%;
+    }
+    .stages-block p{
+        width: 100%;
+        height: 90px;
+        font-size: 18px;
+    }
+}
 }
