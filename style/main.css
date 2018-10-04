@@ -7,6 +7,9 @@ body{
     display: table;
     clear: both;
 }
+.phone, .mail, .name, .facebook, .vk, .instagram, .phone-2{
+    background: url(sprites.png) no-repeat;
+}
 /* МЕЙНСКРИН */
 /* МЕЙНСКРИН */
 /* Бургер */
@@ -479,6 +482,146 @@ background-color:#1a444a;
     font-size:16px;
     color:#5e5e5e;
 }
+/*Этапы КОНЕЦ*/
+/*Этапы КОНЕЦ*/
+/*Обр.св НАчало*/
+/*Обр.св НАчало*/
+.feedback{
+    width: 1360px;
+    height: 685px;
+     margin:auto;
+}
+.feedback-main{
+    width: 49.7%;
+    height: 685px;
+    float:left;
+    background-color:#182c3d;
+}
+.feedback-image{
+    width: 50.3%;
+    height: 685px;
+    float:right;
+    background: 
+    url("../img/fback/kitchen1.png") no-repeat;
+}
+.feedback-main-form{
+    margin-left:100px;
+    width: 480px;
+}
+.feedback-main-form h2{
+    font-family: "PlayfairDisplay Bold";
+    font-size: 40px;
+    color:#ffffff;
+    margin-bottom: 30px;
+    margin-top: 70px;
+}   
+.feedback-main-form p{
+    font-family: "Raleway Regular";
+    font-size: 16px;
+    color:#ccc;
+    margin-bottom: 30px;
+}
+.feedback-form-group{
+    position:relative;
+    height: 40px;
+    margin-bottom: 30px;
+}
+.feedback-main-form input{
+    font-size: 14px;
+    padding: 10px;
+    display:block;
+    width: 480px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    background-color:transparent;
+    color:#ccc;
+}
+.feedback-form-group .bar{
+    position:relative;
+    display: block;
+    width: 500px;
+}
+.feedback-main-form .bar:before,
+.feedback-main-form .bar:after{
+    content: "";
+    height: 2px;
+    width: 0;
+    bottom: 0;
+    position: absolute;
+    background: #f7a15a;
+    transition: 0.5s ease all;
+    -moz-transition: 0.5s ease all;
+    -webkit-transition: 0.5s ease all;
+}
+.feedback-main-form .bar:before{
+    left: 50%;
+}
+.feedback-main-form .bar:after{
+    right: 50%;
+}
+.feedback-main-form input:focus ~ .bar:before,
+.feedback-main-form input:focus ~ .bar:after {
+  width: 50%;
+}
+
+.feedback-main-form input:focus ~ label,
+.feedback-main-form input:valid ~ label{
+    top: -15px;
+    font-size: 10px;
+    color: #f7a15a;
+}
+
+.feedback-form-group label{
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    color:#999999;
+    transition: 0.5s ease all;
+    -moz-transition: 0.5s ease all;
+    -webkit-transition: 0.5s ease all;
+}
+
+.feedback-main-form input:focus{
+    outline: none;
+}
+
+.feedback-form-group:after{
+    content:"";
+    position:absolute;
+    width: 18px;
+    height: 20px;
+    pointer-events: none;
+    background: url("../img/sprites.png") no-repeat;
+    background-position: -113px -9px ;
+    bottom: 10px;
+    right: 0;
+}
+.feedback-form-group:nth-child(4):after{
+    background-position: -15px -12px;
+    width: 20px;
+    height: 20px;
+}
+.feedback-form-group:nth-child(5):after{
+    background-position: -59px -11px ;
+    width: 22px;
+    height: 16px;
+}
+.feedback-main-form button{
+    height: 65px;
+    width: 480px;
+    font-size: 18px;
+    background-color: transparent;
+    color:#ffffff;
+    border-radius: 10px;
+    border:1px solid #ccc;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    outline: none;
+}
+.feedback-main-form button:hover{
+    background-color: #f7a15a;
+}
 /* Медиа запросы */
 @media (min-width: 769px) and (max-width: 1169px){
     .main-screen .main-fond .main-content {
@@ -773,6 +916,41 @@ background-color:#1a444a;
     .stage-block p{
         width: 100%;
     }
+    /*Этапы КОНЕЦ*/
+    /*Этапы КОНЕЦ*/
+    /*Обр.св НАчало*/
+    /*Обр.св НАчало*/
+    .feedback{
+    width: 100%;
+    height: 780px;
+    }
+    .feedback-main{
+    width: 100%;
+    height: 780px;
+    background: 
+    url("../img/fback/kitchen2.png") no-repeat;
+    text-align: center;
+    }
+    .feedback-image{
+        display:none;
+    }
+    .feedback-main-form{
+        margin: auto;
+        width: 73.4%;
+    }
+    .feedback-main-form p{
+        width: 90%;
+        margin: auto;
+        margin-bottom: 30px;
+    }
+    .feedback-form-group{
+        width: 480px;
+        margin-bottom: 50px;
+    }
+    .feedback-main-form input{
+        margin: auto;
+    }
+
 }
 @media (min-width: 480px) and (max-width: 660px){
     .container{
@@ -1032,6 +1210,48 @@ background-color:#1a444a;
         height: 90px;
         font-size: 13px;
     }
+    /*Этапы КОНЕЦ*/
+    /*Этапы КОНЕЦ*/
+    /*Обр.св НАчало*/
+    /*Обр.св НАчало*/
+    .feedback{
+    width: 100%;
+    height: 780px;
+    }
+    .feedback-main{
+    width: 100%;
+    height: 780px;
+    background: 
+    url("../img/fback/kitchen2.png") no-repeat;
+    text-align: center;
+    }
+    .feedback-image{
+        display:none;
+    }
+    .feedback-main-form{
+        margin: auto;
+        width: 73.4%;
+    }
+    .feedback-main-form p{
+        width: 90%;
+        margin: auto;
+        margin-bottom: 30px;
+    }
+    .feedback-form-group{
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    .feedback-main-form input{
+        margin: auto;
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    .feedback-form-group .bar{
+        width: 102%;
+    }
+    .feedback-main-form button{
+        width: 95%;
+    }
 }
 @media (min-width: 321px) and (max-width: 480px){
     .container{
@@ -1277,6 +1497,55 @@ background-color:#1a444a;
         height: 90px;
         font-size: 18px;
     }
+       /*Этапы КОНЕЦ*/
+    /*Этапы КОНЕЦ*/
+    /*Обр.св НАчало*/
+    /*Обр.св НАчало*/
+    .feedback{
+    width: 100%;
+    height: 780px;
+    }
+    .feedback-main{
+    width: 100%;
+    height: 780px;
+    background: 
+    url("../img/fback/kitchen2.png") no-repeat;
+    text-align: center;
+    }
+    .feedback-image{
+        display:none;
+    }
+    .feedback-main-form{
+        margin: auto;
+        width: 90%;
+    }
+    .feedback-main-form h2{
+        font-size: 40px;
+        margin: 0;
+        margin-top: 50px;
+    }
+    .feedback-main-form p{
+        width: 90%;
+        margin: auto;
+        margin-bottom: 50px;
+    }
+    .feedback-main-form p:last-child{
+        margin-bottom: 0;
+    }
+    .feedback-form-group{
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    .feedback-main-form input{
+        margin: auto;
+        width: 95%;
+    }
+    .feedback-form-group .bar{
+        width: 102%;
+    }
+    .feedback-main-form button{
+        width: 95%;
+    }
 }
 @media (min-width: 319px)and (max-width: 320px){
     .container{
@@ -1519,5 +1788,48 @@ background-color:#1a444a;
         height: 90px;
         font-size: 18px;
     }
-}
+    /*Этапы КОНЕЦ*/
+    /*Этапы КОНЕЦ*/
+    /*Обр.св НАчало*/
+    /*Обр.св НАчало*/
+    .feedback{
+    width: 100%;
+    height: 900px;
+    }
+    .feedback-main{
+    width: 100%;
+    height: 900px;
+    background: 
+    url("../img/fback/kitchen3.png") no-repeat;
+    text-align: center;
+    }
+    .feedback-image{
+        display:none;
+    }
+    .feedback-main-form{
+        margin: auto;
+        width: 90%;
+    }
+    .feedback-main-form p{
+        width: 90%;
+        margin: auto;
+        margin-bottom: 50px;
+    }
+    .feedback-main-form p:last-child{
+        margin-bottom: 0;
+    }
+    .feedback-form-group{
+        width: 100%;
+        margin-bottom: 70px;
+    }
+    .feedback-main-form input{
+        margin: auto;
+        width: 95%;
+    }
+    .feedback-form-group .bar{
+        width: 102%;
+    }
+    .feedback-main-form button{
+        width: 95%;
+    }
 }
