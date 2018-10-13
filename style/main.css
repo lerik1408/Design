@@ -409,11 +409,83 @@ background-color:#1a444a;
 }
 /* Портфолио конец */
 /* Портфолио конец */
+/*Приез НАЧАЛО*/
+/*Приез НАЧАЛО*/
+.presentation{
+    margin: auto;
+    position:relative;
+    top: 0px;
+    left:0px;
+    min-width: 1170px;
+    width: 100%;
+    max-width: 1366px;
+    height: 595px;
+    overflow: hidden;
+    text-align: center;
+}
+.presentation-video{
+    margin: 0 auto;
+    position: absolute;
+    display: block;
+    min-width: 1170px;
+    width: 100%;
+    max-width: 1366px;
+    height: 595px;
+    -webkit-transform: scaleX(1.5); 
+    -moz-transform: scaleX(1.72);
+}
+.presentation-button{
+    position: absolute;
+    top:40%;
+    left: 47%;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background:
+    url('../img/video/Triangle.png') no-repeat;
+    background-position: 50% 50%;
+    background-color:#f7a15a;
+}
+.presentation-button:hover{
+    transform: scale(1.5);
+    transition: 0.5s ease all;
+}
+.presentation p{
+    position: absolute;
+    color:#fff;
+    margin:auto;
+    left: 40%;
+    bottom: 30%;
+}
+#pauseplay{
+    position:absolute;
+    display: none;
+    width: 60px;
+    height: 20px;
+    background-color:#f7a15a;
+    border-radius: 5px;
+    color:#fff;
+    bottom: 0;
+    user-select: none;
+}
+#dynamic {
+    display:none;
+    position: absolute;
+    right: 0;
+    bottom: 10px;
+    fill:#f7a15a;
+    padding:0 5px;
+}       
+#dynamic.off {
+    fill:#ccc;
+}
+/*Приез КОНЕЦ*/
+/*Приез КОНЕЦ*/
 /* Этапы НАЧАЛО */
 /* Этапы НАЧАЛО */
 .stages{
     height: 590px;
-    padding-top:135px;
+    margin-top: 50px;
 }
 .stages h2{
     font-family: "Raleway ExtraBold";
@@ -487,13 +559,15 @@ background-color:#1a444a;
 /*Обр.св НАчало*/
 /*Обр.св НАчало*/
 .feedback{
-    width: 1360px;
-    height: 685px;
-     margin:auto;
+    min-width: 1170px;
+    width: 100%;
+    height: 683px;
+    margin:auto;
 }
 .feedback-main{
+    position:relative;
     width: 49.7%;
-    height: 685px;
+    height: 683px;
     float:left;
     background-color:#182c3d;
 }
@@ -505,7 +579,10 @@ background-color:#1a444a;
     url("../img/fback/kitchen1.png") no-repeat;
 }
 .feedback-main-form{
-    margin-left:100px;
+    position:absolute;
+    top: 75px;
+    right: 50px;
+    margin-left:15.555%;
     width: 480px;
 }
 .feedback-main-form h2{
@@ -513,7 +590,7 @@ background-color:#1a444a;
     font-size: 40px;
     color:#ffffff;
     margin-bottom: 30px;
-    margin-top: 70px;
+    margin-top: 0px;
 }   
 .feedback-main-form p{
     font-family: "Raleway Regular";
@@ -621,6 +698,61 @@ background-color:#1a444a;
 }
 .feedback-main-form button:hover{
     background-color: #f7a15a;
+}
+/*Обр.св КОНЕЦ*/
+/*Обр.св КОНЕЦ*/
+/*ФУТЕР НАЧЛАО*/
+/*ФУТЕР НАЧЛАО*/
+.futer{
+    min-width: 1170px;
+    width: 100%;
+    background-color:#182c3d;
+    height: 255px;
+    margin-top: 0;
+}
+.futer_container2{
+    min-width: 1170px;
+    width: 100%
+    max-width: 1366px;
+    height: 100px;
+    margin:0 auto;
+    padding-top: 75px;
+}
+.futer_container2 p{
+    width: 180px;
+    color:#ffc487;
+    margin: 0;
+}
+.futer_container2 p:first-child{
+    float:left;
+    margin-left: 7.32%;
+}
+.futer_container2 p:last-child{
+    float:right;
+    margin-right: 7.32%;
+}
+.futer_container2_main{
+    width: 150px;
+    height: 100px;
+    float:left;
+    margin-left: 23.792%;
+}
+.futer_container2_main_logo{
+    width: 70px;
+    height: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 35px;
+}
+.futer_container2_main .social{
+    width: 150px;
+    height: 20px;
+}
+.futer_container2_main .social img{
+    padding-right:50px;
+}
+.futer_container2_main .social img:last-child{
+    padding-right:0px;
 }
 /* Медиа запросы */
 @media (min-width: 769px) and (max-width: 1169px){
@@ -892,10 +1024,38 @@ background-color:#1a444a;
     }
     /* Портфолио конец */
     /* Портфолио конец */
+    /*Приез НАЧАЛО*/
+    /*Приез НАЧАЛО*/
+    .presentation{
+        min-width:100%;
+        height: 550px;
+    }
+    .presentation-video{
+        min-width: 100%;
+        height: 550px;
+    }
+    .presentation-button{
+        top:40%;
+        left: 40%;
+        width: 125px;
+        height: 125px;
+    }
+    .presentation p{
+        font-size: 22px;
+        left: 17%;
+        bottom: 30%;
+        width: 450px;
+    }
+    #pauseplay{
+    bottom: 20%;
+    }
+    #dynamic {
+      bottom: 20%;  
+    }
     /* Этапы НАЧАЛО */
     /* Этапы НАЧАЛО */
     .stages{
-        height: 1040px;
+    height: 1040px;
     }
     .stages-block{
     width: 35.55%;
@@ -921,6 +1081,7 @@ background-color:#1a444a;
     /*Обр.св НАчало*/
     /*Обр.св НАчало*/
     .feedback{
+    min-width: 100%;
     width: 100%;
     height: 780px;
     }
@@ -935,6 +1096,7 @@ background-color:#1a444a;
         display:none;
     }
     .feedback-main-form{
+        position:static;
         margin: auto;
         width: 73.4%;
     }
@@ -1178,11 +1340,39 @@ background-color:#1a444a;
     }
     /* Портфолио конец */
     /* Портфолио конец */
+    /*Приез НАЧАЛО*/
+    /*Приез НАЧАЛО*/
+    .presentation{
+        min-width:100%;
+        height: 450px;
+    }
+    .presentation-video{
+        min-width: 100%;
+        height: 450px;
+    }
+    .presentation-button{
+        top:40%;
+        left: 40%;
+
+    }
+    .presentation p{
+        font-size: 16px;
+        left: 10%;
+        bottom: 25%;
+        width: 450px;
+    }
+    #pauseplay{
+    bottom: 20%;
+    }
+    #dynamic {
+      bottom: 20%;  
+    }
+    /*Приез КОНЕЦ*/
+    /*Приез КОНЕЦ*/
     /* Этапы НАЧАЛО */
     /* Этапы НАЧАЛО */
     .stages{
     height: 840px;
-    padding-top:200px;
     }
     .stages h2{
     font-size: 30px;
@@ -1215,6 +1405,7 @@ background-color:#1a444a;
     /*Обр.св НАчало*/
     /*Обр.св НАчало*/
     .feedback{
+    min-width: 100%;
     width: 100%;
     height: 780px;
     }
@@ -1229,6 +1420,7 @@ background-color:#1a444a;
         display:none;
     }
     .feedback-main-form{
+        position:static;
         margin: auto;
         width: 73.4%;
     }
@@ -1253,7 +1445,7 @@ background-color:#1a444a;
         width: 95%;
     }
 }
-@media (min-width: 321px) and (max-width: 480px){
+@media (min-width: 321px) and (max-width: 479px){
     .container{
         width: 90.6%;
     }
@@ -1469,6 +1661,34 @@ background-color:#1a444a;
     }
     /* Портфолио конец */
     /* Портфолио конец */
+       /*Приез НАЧАЛО*/
+    /*Приез НАЧАЛО*/
+    .presentation{
+        min-width:100%;
+        height: 340px;
+    }
+    .presentation-video{
+        min-width: 100%;
+        height: 340px;
+    }
+    .presentation-button{
+        top:40%;
+        left: 40%;
+    }
+    .presentation p{
+        font-size: 16px;
+        left: 25%;
+        bottom: 20%;
+        width: 200px;
+    }
+    #pauseplay{
+    bottom: 20%;
+    }
+    #dynamic{
+      bottom: 20%;  
+    }
+    /*Приез КОНЕЦ*/
+    /*Приез КОНЕЦ*/
     /* Этапы НАЧАЛО */
     /* Этапы НАЧАЛО */
      .stages{
@@ -1502,6 +1722,7 @@ background-color:#1a444a;
     /*Обр.св НАчало*/
     /*Обр.св НАчало*/
     .feedback{
+    min-width: 100%;
     width: 100%;
     height: 780px;
     }
@@ -1516,6 +1737,7 @@ background-color:#1a444a;
         display:none;
     }
     .feedback-main-form{
+        position:static;
         margin: auto;
         width: 90%;
     }
@@ -1760,6 +1982,30 @@ background-color:#1a444a;
     }
     /* Портфолио конец */
     /* Портфолио конец */
+    .presentation{
+        min-width:100%;
+        height: 400px;
+    }
+    .presentation-video{
+        min-width: 100%;
+        height: 400px;
+    }
+    .presentation-button{
+        top:40%;
+        left: 40%;
+    }
+    .presentation p{
+        font-size: 16px;
+        left: 25%;
+        bottom: 20%;
+        width: 200px;
+    }
+    #pauseplay{
+    bottom: 28%;
+    }
+    #dynamic{
+    bottom: 28%;  
+    }
     /* Этапы НАЧАЛО */
     /* Этапы НАЧАЛО */
      .stages{
@@ -1793,6 +2039,7 @@ background-color:#1a444a;
     /*Обр.св НАчало*/
     /*Обр.св НАчало*/
     .feedback{
+    min-width: 100%;
     width: 100%;
     height: 900px;
     }
@@ -1807,6 +2054,7 @@ background-color:#1a444a;
         display:none;
     }
     .feedback-main-form{
+        position:static;
         margin: auto;
         width: 90%;
     }
