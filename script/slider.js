@@ -1,15 +1,8 @@
 window.addEventListener('DOMContentLoaded', function() {
-  console.log("slider")
   let slideIndex = 1,
   slides = document.getElementsByClassName('slider-item'),
   dotsWrap = document.querySelector('.slider-dots'),
   dots = document.getElementsByClassName('dot');
-  console.log(slides);
-  console.log("ggggdg")
-  console.log(dotsWrap);
-  console.log(dots);
-  console.log(dots.length)
-
   showSlides(slideIndex);
   function showSlides(index){
     if (index > slides.length){
@@ -39,17 +32,46 @@ window.addEventListener('DOMContentLoaded', function() {
     for (let i = 0; i <= dots.length; i++) {
       if (event.target.classList.contains('dot') && event.target == dots[i-1]){
         currentSlide(i);
+        clearInterval(p);
       }
     }
-  }); 
+  });
+// АВТО СЛАЙД
+// var timeout = 2500;
+// for(var i = 1; i <= slides.length+1; i++) {
+//   setInterval(
+//     (function (N){
+//       return function() {
+//         plusSlides(1);
+//         console.log(N+"n")
+//       }
+//     })(i)
+//     , 
+//     timeout
+//   );
+//   // timeout += 2500;
+// };
+// АВТО СЛАЙД
+  // setInterval(
+  //   (function (N){
+  //     return function() {
+  //       plusSlides(1);
+  //       console.log(N+"n")
+  //     }
+  //   })(1)
+  //   , 
+  //   timeout
+  // );
+  var p =setInterval(function(){
+    plusSlides(1);
+  },7000);
+
   // Слайдер1
   // Слайдер дивов
   let PortfolioIndex = 1,
   portfolio=document.getElementsByClassName("portfolio-slider-item"),
   PortfolioDotWrap=document.querySelector('.portfolio-menu'),
   PortfolioDot=document.getElementsByClassName('portfolio-menu-dot');
-  console.log(PortfolioDotWrap);
-  console.log(portfolio);
   showPortfolio(PortfolioIndex);
   function showPortfolio(index){
     if(index>portfolio.length){
@@ -75,4 +97,17 @@ window.addEventListener('DOMContentLoaded', function() {
       }
     }
   })
+
+
+
+
 });
+  // var ua = window.navigator.userAgent.toLowerCase(),
+  // is_ie = (/trident/gi).test(ua) || (/msie/gi).test(ua);
+  // if(is_ie){
+  //   document.location.href = "https://www.google.ru/intl/ru/chrome/?brand=CHBD&gclid=CjwKCAjwu5veBRBBEiwAFTqDwTEE9G44sBzSw1ZOPMOH3dbYAYZYGwiYqA7DF_DoIGREXZ6pb2D8GRoCCbwQAvD_BwE&gclsrc=aw.ds&dclid=CLfr-4OFjt4CFQPWGAodQfQMfQ";
+  // }
+//   if (document.all) {
+//     // Код для всех версий IE. В других браузерах выполняться не будет.
+//     alert("ddd")
+// }

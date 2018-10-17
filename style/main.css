@@ -2,13 +2,51 @@ body{
     font-family: 'Raleway Light','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin:0;
 }
+@-webkit-keyframes fadeIn {
+    0% {
+      opacity: 0;
+      -webkit-transform: scale(0.1, 0.1);
+      transform: scale(0.1, 0.1);
+    }
+  
+    100% {
+      opacity: 1;
+      -webkit-transform: scale(1, 1);
+      transform: scale(1, 1);
+    }
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      -webkit-transform: scale(0.1, 0.1);
+      transform: scale(0.1, 0.1);
+    }
+  
+    100% {
+      opacity: 1;
+      -webkit-transform: scale(1, 1);
+      transform: scale(1, 1);
+    }
+  }
 .clearfix::after {
     content: "";
     display: table;
     clear: both;
 }
 .phone, .mail, .name, .facebook, .vk, .instagram, .phone-2{
-    background: url(sprites.png) no-repeat;
+    background: url(../img/sprites.png) no-repeat;
+}
+.modalonce{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 1000;
+    width: 100%;
+    height: 500px;
+    background-color: rgba(51, 44, 44, 0.9);
+    text-align: center;
+
 }
 /* МЕЙНСКРИН */
 /* МЕЙНСКРИН */
@@ -136,6 +174,8 @@ body{
     height: 595px;
     width: 1170px;
     z-index: -2;
+    -webkit-animation: fadeIn 1s linear;
+    animation: fadeIn 1s linear;
 }
 .main-screen .slider .slider-item img{
     height: 595px;
@@ -204,7 +244,8 @@ background-color:#1a444a;
     width: 280px;
     height: 60px;
     border:1px solid #fff;
-    background-color:transparent;   
+    background-color:transparent;
+    cursor: pointer; 
 }
 .main-screen .button-main a{
     font-family: 'Raleway ExtraBold';
@@ -357,6 +398,11 @@ background-color:#1a444a;
     transform:translateX(10px);
     font-weight:bold;
 }
+.portfolio-menu li:focus{
+    color:#000000;
+    transform:translateX(10px);
+    font-weight:bold;
+}
 .portfolio-menu .portfolio-menu-dot-active{
     color: #f7a15a;
     transform:translateX(15px);
@@ -365,6 +411,9 @@ background-color:#1a444a;
     width: 880px;
     height: 605px;
     float: right;
+    -webkit-animation: fadeIn 0.5s linear;
+    animation: fadeIn 0.5s linear;
+
 }
 .portfolio-slider-item img{
     width: 880px;
@@ -389,6 +438,7 @@ background-color:#1a444a;
     height: 55px;
     background-color:transparent;
     border:solid 1px #00203a;
+    cursor: pointer; 
 }
 .portfolio-button a{
     font-family:"Raleway ExtraBold";
@@ -400,6 +450,9 @@ background-color:#1a444a;
     text-decoration: none;
 }
 .portfolio-button:hover{
+    background-color: #f7a15a;
+}
+.portfolio-button:active{
     background-color: #f7a15a;
 }
 .portfolio .value{
@@ -485,7 +538,6 @@ background-color:#1a444a;
 /* Этапы НАЧАЛО */
 .stages{
     height: 590px;
-    margin-top: 50px;
 }
 .stages h2{
     font-family: "Raleway ExtraBold";
@@ -494,6 +546,7 @@ background-color:#1a444a;
     margin: 0;
     padding: 0;
     margin-bottom:50px;
+    padding-top: 20px;
 }
 .stages-block{
     position:relative;
@@ -735,12 +788,12 @@ background-color:#1a444a;
     width: 150px;
     height: 100px;
     float:left;
-    margin-left: 23.792%;
+    margin-left: 27.35%;
 }
 .futer_container2_main_logo{
     width: 70px;
     height: 40px;
-    margin-left: auto;
+    margin-left: 30px;
     margin-right: auto;
     margin-bottom: 35px;
 }
@@ -748,10 +801,10 @@ background-color:#1a444a;
     width: 150px;
     height: 20px;
 }
-.futer_container2_main .social img{
+.futer_container2_main .social a{
     padding-right:50px;
 }
-.futer_container2_main .social img:last-child{
+.futer_container2_main .social a:last-child{
     padding-right:0px;
 }
 /* Медиа запросы */
@@ -781,13 +834,18 @@ background-color:#1a444a;
     }
 }
 @media screen and (min-width: 1170px) {
-        .container{
+    .container{
         background:
         url(../img/fig.png) no-repeat 0 0,
         url(../img/fig.png) no-repeat 24.358% 0,
         url(../img/fig.png) no-repeat 50% 0,
         url(../img/fig.png) no-repeat 74.700% 0,
         url(../img/fig.png) no-repeat 100% 0;
+    }
+}
+@media (min-width: 769px) and (max-width: 1366px){
+    .futer_container2_main{
+    margin-left: 23.35%;
     }
 }
 @media (min-width: 769px) and (max-width:1169px){
@@ -801,6 +859,7 @@ background-color:#1a444a;
         width: 100%;
     }
 }
+
 @media (min-width: 661px) and (max-width: 768px){
     /* Основа */
     .main-screen .main-fond{
@@ -1112,7 +1171,26 @@ background-color:#1a444a;
     .feedback-main-form input{
         margin: auto;
     }
-
+    /*ФУТЕР НАЧЛАО*/
+    /*ФУТЕР НАЧЛАО*/
+    .futer{
+    min-width: 100%;
+    }
+    .futer_container2{
+    min-width: 100%;
+    }
+    .futer_container2 p:first-child{
+    float:left;
+    margin-left: 5.208;
+}
+    .futer_container2 p:last-child{
+    float:right;
+    margin-right: 5.208%;
+    width: 135px;
+    }
+    .futer_container2_main{
+    margin-left: 8.4%;
+    }
 }
 @media (min-width: 480px) and (max-width: 660px){
     .container{
@@ -1444,6 +1522,30 @@ background-color:#1a444a;
     .feedback-main-form button{
         width: 95%;
     }
+    /*ФУТЕР НАЧЛАО*/
+    /*ФУТЕР НАЧЛАО*/
+    .futer{
+    min-width: 100%;
+    }
+    .futer_container2{
+    min-width: 100%;
+    }
+    .futer_container2 p{
+    font-size: 14px;
+    width: 150px;
+    }
+    .futer_container2 p:first-child{
+    float:left;
+    margin-left:5px;
+    }
+    .futer_container2 p:last-child{
+    float:right;
+    margin-right:5px;
+    width: 100px;
+    }
+    .futer_container2_main{
+    margin-left: 10.4%;
+    }
 }
 @media (min-width: 321px) and (max-width: 479px){
     .container{
@@ -1768,6 +1870,33 @@ background-color:#1a444a;
     .feedback-main-form button{
         width: 95%;
     }
+    /*ФУТЕР НАЧЛАО*/
+    /*ФУТЕР НАЧЛАО*/
+    .futer{
+    min-width: 100%;
+    }
+    .futer_container2{
+    min-width: 100%;
+    }
+    .futer_container2 p{
+    font-size: 14px;
+    width: 150px;
+    }
+    .futer_container2 p:first-child{
+    float:left;
+    margin-left:30%;
+    margin-bottom: 20px;
+    }
+    .futer_container2 p:last-child{
+    float:left;
+    margin-left:34%;
+    margin-top: 10px;
+    width: 100px;
+    }
+    .futer_container2_main{
+    margin-left: 30%;
+    float:left;
+    }
 }
 @media (min-width: 319px)and (max-width: 320px){
     .container{
@@ -2079,5 +2208,32 @@ background-color:#1a444a;
     }
     .feedback-main-form button{
         width: 95%;
+    }
+    /*ФУТЕР НАЧЛАО*/
+    /*ФУТЕР НАЧЛАО*/
+    .futer{
+    min-width: 100%;
+    }
+    .futer_container2{
+    min-width: 100%;
+    }
+    .futer_container2 p{
+    font-size: 14px;
+    width: 150px;
+    }
+    .futer_container2 p:first-child{
+    float:left;
+    margin-left:30%;
+    margin-bottom: 20px;
+    }
+    .futer_container2 p:last-child{
+    float:left;
+    margin-left:34%;
+    margin-top: 10px;
+    width: 100px;
+    }
+    .futer_container2_main{
+    margin-left: 30%;
+    float:left;
     }
 }

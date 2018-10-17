@@ -4,7 +4,7 @@ window.addEventListener('DOMContentLoaded', function() {
     var imgvid=document.getElementById("myvideo")
     function screenDesktop(){
         imglog.src="img/mainScreen/logo.png"; 
-        imgvid768.poster="img/video/preview.png";
+        imgvid.poster="img/video/preview.png";
     }
     function screen1170(){
         imglog.src="img/mainScreen/logo768.png";
